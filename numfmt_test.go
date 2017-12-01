@@ -78,7 +78,7 @@ func BenchmarkFloatCommas(b *testing.B) {
 	nt := 1000
 	tests := make([]float64, nt)
 	for i := 0; i < nt; i++ {
-		tests[i] = rand.Float64()
+		tests[i] = rand.Float64() * 10000
 	}
 	b.ResetTimer()
 
